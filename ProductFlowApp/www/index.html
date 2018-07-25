@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="./css/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Open Sans", sans-serif
+    }
+</style>
+
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" onclick="home();">
+                <i class="fas fa-home w3-margin-right"></i>
+            </a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-padding-large" title="Notifications">
+                    <i class="fa fa-bell"></i>
+                    <span class="w3-badge w3-right w3-small w3-green">3</span>
+                </button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#" class="w3-bar-item w3-button">Alerta - em construção..</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Account Settings">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                <img src="./img/img_avatar.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Menu</a>
+    </div>
+
+    <!-- ****************************************************************************************************** -->
+    <!-- ****************************************************************************************************** -->
+    <!-- Main Page Container -->
+    <!-- ****************************************************************************************************** -->
+    <div id="mainPage" class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white w3-hide-small ">
+                    <div class="w3-container">
+                        <h4 class="w3-center">LIB Desktop</h4>
+                        <p class="w3-center">
+                            <img src="./img/img_avatar.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
+                        </p>
+                        <hr>
+                        <p>
+                            <i class="fas fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Live Interactive Bot, UI</p>
+                        <p>
+                            <i class="fas fa-home fa-fw w3-margin-right w3-text-theme"></i> São José dos Campos, SP, Brasil</p>
+                        <p>
+                            <i class="fas fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> July 23, 2018</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="w3-card w3-round">
+                    <div class="w3-white">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">
+                            <i class="fas fa-circle-o-notch fa-fw w3-margin-right"></i> Compras</button>
+                        <div id="Demo1" class="w3-hide">
+                            <div class="w3-container w3-button w3-block w3-center-align">
+                                <div class="w3-button" onclick="">Página de compras curtomizada - em construção..</div>
+                            </div>
+                            <div class="w3-container w3-button w3-block w3-center-align">
+                                <div class="w3-button" onclick="resetAll()">Resetar compras</div>
+                            </div>
+                        </div>
+
+
+                        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">
+                            <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Calendário de compras</button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                            <p>Em construção..</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div class="w3-container">
+                        <p>Interests</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5">News</span>
+                            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme">Games</span>
+                            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <!-- NEW PRODUCT -->
+            <div class="w3-col m7">
+                <div class="w3-row-padding">
+                    <div class="w3-col m12">
+                        <div class="w3-card-4 w3-round w3-white">
+                            <div class="w3-container w3-padding w3-margin">
+                                <h6 class="w3-opacity">Cadastre um novo produto</h6>
+                                <p id="newProductNameField" contenteditable="true" class="w3-border w3-padding" onfocusout="newProductNameLostFocus()" onfocus="newProductNameGainFocus()"></p>
+                                <!-- QUANTITY MODE -->
+                                <div id="newProductQntModeRow" class="w3-row w3-mobile w3-theme-d1 w3-border w3-large w3-center-align w3-hide">
+                                    <a id="massSelector" class="w3-col s4 m4 l3 w3-button w3-padding-large w3-hover-white w3-center-align w3-cell-middle" onclick="selectMode('Kilogramas')">
+                                        <i class="fas fa-weight"></i>
+                                    </a>
+                                    <a id="volumeSelector" class="w3-col s4 m4 l3 w3-button w3-padding-large w3-hover-white w3-center-align w3-cell-middle" onclick="selectMode('Litros')">
+                                        <i class="fas fa-tint"></i>
+                                    </a>
+                                    <a id="unitSelector" class="w3-col s4 m4 l3 w3-button w3-padding-large w3-hover-white w3-center-align w3-cell-middle" onclick="selectMode('Unidades')">
+                                        <i class="fas fa-sort-numeric-up"></i>
+                                    </a>
+                                </div>
+                                <!-- QUANTITY FIELD -->
+                                <p id="newProductQntField" contenteditable="false" class="w3-border w3-hide">
+                                    <input id="newProductQntInput" type="text" class="w3-input w3-border w3-padding" name="quantity" placeholder="Litros">
+                                </p>
+                                <button type="button" class="w3-button w3-theme" onclick="clickRegisterNewProduct()">
+                                    <i class="fas fa-pencil-alt"></i>  Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SORT MODE -->
+            <button class="w3-button w3-green w3-padding w3-opacity w3-section w3-round w3-border-bottom" style="width:49%;" title="Accept">
+                <i class="fa fa-check"></i>
+                <b>Últimas compras</b>
+            </button>
+            <button class="w3-button w3-red w3-padding w3-opacity w3-section w3-round w3-border-bottom" style="width:49%;" title="Decline">
+                <i class="fa fa-remove"></i>
+                <b>Menor reserva</b>
+            </button>
+            <div id="middleColDiv" class="w3-col m7">
+                <!-- HIDDEN PRODUCT EXAMPLE -->
+                <div class="w3-container w3-card w3-white w3-round w3-margin w3-hide">
+                    <br>
+                    <i class="fas fa-arrow-up w3-green w3-large w3-circle w3-margin-right"></i>
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>Arroz: 5Kg</h4>
+                    <hr class="w3-clear">
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom">
+                        <i class="fas fa-search"></i> Inspecionar</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom">
+                        <i class="fas fa-edit"></i> Editar</button>
+                </div>
+                <!-- End Middle Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-col m2">
+                <br>
+                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                    <p>ADS</p>
+                </div>
+                <br>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- ****************************************************************************************************** -->
+        <!-- End Main Page Container -->
+        <!-- ****************************************************************************************************** -->
+        <!-- ****************************************************************************************************** -->
+    </div>
+
+    <!-- ****************************************************************************************************** -->
+    <!-- ****************************************************************************************************** -->
+    <!-- Details Page Container -->
+    <!-- ****************************************************************************************************** -->
+    <div id="detailsPage" class="w3-container w3-content w3-hide" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div id="productPageTop" class="w3-col m3">
+                <!-- Profile -->
+                <div class="w3-card-4 w3-round w3-white">
+                    <div class="w3-container">
+                        <h2 class="w3-center">Trigo</h2>
+                        <hr>
+                        <div class="w3-row">
+                            <div class="w3-col s4 w3-center">
+                                <i class="fas fa-shopping-cart fa-fw w3-margin-right w3-text-theme"></i>5</p>
+                            </div>
+                            <div class="w3-col s4 w3-center">
+                                <i class="fas fa-arrow-up fa-fw w3-margin-right w3-opacity" style="color:green"></i>5</p>
+                            </div>
+                            <div class="w3-col s4 w3-center">
+                                <i class="fas fa-arrow-down fa-fw w3-margin-right w3-opacity" style="color:red"></i>5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="w3-col m7">
+                <!-- HIDDEN PRODUCT EXAMPLE -->
+                <ul class="w3-ul w3-card w3-white w3-margin w3-hide">
+                    <li class="w3-padding-16">
+                        <span class="w3-xlarge">5 kg</span>
+                        <span class="w3-large w3-right w3-opacity" style="margin-top: 5px;">5 min</span>
+                        <br>
+                    </li>
+                    <li class="w3-padding-16">
+                        <span class="w3-xlarge">2 kg</span>
+                        <span class="w3-large w3-right w3-opacity" style="margin-top: 5px;">5 min</span>
+                        <br>
+                    </li>
+                    <li class="w3-padding-16">
+                        <span class="w3-xlarge">1 kg</span>
+                        <span class="w3-large w3-right w3-opacity" style="margin-top: 5px;">5 min</span>
+                        <br>
+                    </li>
+                </ul>
+                <!-- PRODUCTS DIV -->
+                <ul id="productPageMiddle" class="w3-ul w3-card w3-white w3-margin">
+                    <!-- ELEMENTS ARE ADDED HERE -->
+                </ul>
+                <!-- End Middle Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-col m2">
+                <br>
+                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                    <p>ADS</p>
+                </div>
+                <br>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Grid -->
+    </div>
+    <!-- ****************************************************************************************************** -->
+    <!-- End Details Page Container -->
+    <!-- ****************************************************************************************************** -->
+    <!-- ****************************************************************************************************** -->
+    </div>
+
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5>Footer</h5>
+    </footer>
+
+    <footer class="w3-container w3-theme-d5">
+        <p>Product Flow App 2018
+        </p>
+    </footer>
+
+    <script>
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+            }
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // START APP
+        function startApp() {
+            getPurchasesJSONrender();
+        }
+        startApp();
+
+        // NEW PRODUCT FUNCTIONS
+        function newProductNameLostFocus() {
+            // IF TEXT FIELD EMPTY AND LOST FOCUS -> HIDE AGAIN
+            var element = document.getElementById("newProductNameField");
+            if (element.innerHTML == '') {
+                var element = document.getElementById("newProductQntModeRow");
+                element.classList.add("w3-hide");
+                var element = document.getElementById("newProductQntField");
+                element.classList.add("w3-hide");
+            }
+        }
+        function newProductNameGainFocus() {
+            // IF TEXT FIELD SELECTED -> SHOW QUANTITY MODES
+            var element = document.getElementById("newProductQntModeRow");
+            element.classList.remove("w3-hide");
+            // ADD EXTRA TEMPORARY MARGIN
+            element.style = "margin-bottom: 15px;";
+        }
+
+        // NEW PRODUCT -> MODE ROW FUNCTIONS
+        function selectMode(mode) {
+            // DECYPHER MODE
+            if (mode == "Kilogramas") {
+                var selectorID = "massSelector";
+            }
+            if (mode == "Litros") {
+                var selectorID = "volumeSelector";
+            }
+            if (mode == "Unidades") {
+                var selectorID = "unitSelector";
+            }
+            // ADD MODE META TO PRODUCT NAME FIELD
+            var element = document.getElementById("newProductNameField").setAttribute("meta-mode", selectorID);
+            // REMOVE SELECTION FROM ALL MODES
+            removeSelectionClassFromQuantityModeSelectors();
+            // MARK THIS AS SELECTED
+            var element = document.getElementById(selectorID);
+            element.classList.add("w3-white");
+            // CHANGE ATTRIBUTES ON QUANTITY FIELD
+            var element = document.getElementById("newProductQntInput");
+            element.placeholder = mode;
+            // DISPLAY QUANTITY FIELD
+            var element = document.getElementById("newProductQntField");
+            element.classList.remove("w3-hide");
+            // REMOVE EXTRA MARGIN FROM QUANTITY MODE ROW
+            var element = document.getElementById("newProductQntModeRow");
+            element.style = "";
+        }
+        function removeSelectionClassFromQuantityModeSelectors() {
+            var element = document.getElementById("massSelector");
+            element.classList.remove("w3-white");
+            var element = document.getElementById("volumeSelector");
+            element.classList.remove("w3-white");
+            var element = document.getElementById("unitSelector");
+            element.classList.remove("w3-white");
+        }
+
+        // NEW PRODUCT -> REGISTER FUNCTIONS
+        function clickRegisterNewProduct() {
+            // ASSERT NON-EMPTY FIELDS
+            var element = document.getElementById("newProductQntInput");
+            if (element.value == '') {
+                alert("Invalid Data");
+            } else {
+                // REGISTER DATA
+                registerNewPurchase();
+                // EMPTY AND HIDE FIELDS
+                var element = document.getElementById("newProductNameField");
+                element.innerHTML = '';
+                removeSelectionClassFromQuantityModeSelectors();
+                var element = document.getElementById("newProductQntInput");
+                element.placeholder = '';
+                element.value = '';
+                var element = document.getElementById("newProductQntField");
+                element.classList.add("w3-hide");
+                var element = document.getElementById("newProductQntModeRow");
+                element.classList.add("w3-hide");
+            }
+        }
+
+        // REGISTER NEW PRODUCT
+        function registerNewPurchase() {
+            // REGISTER LOCAL JSON VAR
+            try {
+                var purchases = JSON.parse(localStorage.getItem("purchases"));
+            } catch {
+                if (!purchases) {
+                    purchases = [];
+                }
+            }
+            // STRUCTURE NEW PURCHASE
+            var now = new Date().getTime();
+            var productNameSrc = document.getElementById('newProductNameField').innerHTML;
+            var productMeasureSrc = document.getElementById('newProductNameField').getAttribute('meta-mode');
+            var productValueSrc = document.getElementById('newProductQntInput').value;
+            // GET DATA
+            var purchase = {
+                productName: productNameSrc,
+                date: now,
+                measure: productMeasureSrc,
+                value: productValueSrc
+            };
+            // UPDATE DATA
+            purchases.push(purchase);
+            window.localStorage.setItem("purchases", JSON.stringify(purchases));
+            refreshMainView();
+        }
+        function refreshMainView() {
+            // REFRESH VIEW
+            var element = document.getElementById("middleColDiv");
+            element.innerHTML = '';
+            getPurchasesJSONrender();
+        }
+
+        // JSON PRODUCT LIST GETTING FUNCTIONS
+        function getPurchasesJSONrender() {
+            try {
+                var purchases = JSON.parse(localStorage.getItem("purchases"));
+            } catch {
+                console.log("Empty storage!");
+            }
+            var currentPurchase;
+            if (purchases) {
+                for (var i in purchases) {
+                    currentPurchase = purchases[i];
+                    renderInitialProducts(currentPurchase);
+                }
+                // SET DATA
+                // RENDER
+
+            }
+        }
+
+        // INITIAL PRODUCT LIST RENDER FUNCTIONS
+        function renderInitialProducts(currentPurchase) {
+            // EXTRACT DATA
+            var Name = currentPurchase.productName;
+            var Time = currentPurchase.date;
+            var Measure = currentPurchase.measure;
+            var Value = currentPurchase.value;
+            if (Measure == 'massSelector') var MeasureUnit = ' kg';
+            if (Measure == 'volumeSelector') var MeasureUnit = ' L';
+            if (Measure == 'unitSelector') var MeasureUnit = ' Un.';
+            // CALCULATE TIME DIFF
+            var now = new Date().getTime();
+            var dif = now - Time;
+            var difStr = msecToInformalTimeAgo(dif);
+            // GET PARENT DIV REFERENCE
+            var parent = document.getElementById('middleColDiv');
+            // DECLARE ELEMENT REFERENCERS
+            var container = document.createElement('div');
+            var br = document.createElement('br');
+            var fa_arrowUp = document.createElement('i');
+            var span = document.createElement('span');
+            var h4 = document.createElement('h4');
+            var hr = document.createElement('hr');
+            var button1 = document.createElement('button');
+            var fa_search = document.createElement('i');
+            var button2 = document.createElement('button');
+            var fa_edit = document.createElement('i');
+            // SET ELEMENT ATTRIBUTES
+            container.classList.add('w3-container', 'w3-card', 'w3-white', 'w3-round', 'w3-margin');
+            fa_arrowUp.classList.add('fas', 'fa-arrow-up', 'w3-green', 'w3-large', 'w3-circle', 'w3-margin-right');
+            span.classList.add('w3-right', 'w3-opacity');
+            hr.classList.add('w3-clear');
+            button1.type = "button";
+            button1.classList.add('w3-button', 'w3-theme-d1', 'w3-margin-bottom');
+            button1.style = "margin-right: 5px;"
+            button1.setAttribute('onclick', 'inspectProductClick(' + Time + ')');
+            fa_search.classList.add('fas', 'fa-search');
+            button2.type = "button";
+            button2.classList.add('w3-button', 'w3-theme-d2', 'w3-margin-bottom');
+            button2.setAttribute('onclick', 'editProductCard(' + Time + ')');
+            fa_edit.classList.add('fas', 'fa-edit');
+            h4.innerHTML = Name + ": <b>" + Value + MeasureUnit + "</b>";
+            span.innerHTML = difStr;
+            // APPEND ALL ELEMENTS
+            container.appendChild(br);
+            container.appendChild(fa_arrowUp);
+            container.appendChild(span);
+            container.appendChild(h4);
+            container.appendChild(hr);
+            // button1.appendChild(fa_search);
+            container.appendChild(button1);
+            //  button2.appendChild(fa_edit);
+            container.appendChild(button2);
+            button1.innerHTML = "<i class=\"fas fa-search\"></i> Detalhes";
+            button2.innerHTML = "<i class=\"fas fa-edit\"></i> Editar";
+            // POST
+            parent.prepend(container);
+        }
+        function msecToInformalTimeAgo(dif) {
+            if (dif < 60000) { return "agora"; }
+            if ((dif >= 60000) && (dif < 3600000)) {
+                var value = Math.floor(dif / 60000);
+                return (value + " min");
+            }
+            if ((dif >= 3600000) && (dif < 86400000)) {
+                var value = Math.floor(dif / 3600000);
+                return (value + "h");
+            }
+            if ((dif >= 86400000) && (dif < 172800000)) { return "1 dia"; }
+            if ((dif >= 172800000) && (dif < 2332800000)) {
+                var value = Math.floor(dif / 86400000);
+                return (value + " dias");
+            }
+            if ((dif >= 2332800000) && (dif < 5184000000)) { return "1 mes"; }
+            if ((dif >= 5184000000) && (dif < 31104000000)) {
+                var value = Math.floor(dif / 2332800000);
+                return (value + " meses");
+            }
+            if ((dif >= 31104000000) && (dif < 62208000000)) { return "1 ano"; }
+            if ((dif >= 62208000000) && (dif < 155520000000)) {
+                var value = Math.floor(dif / 31104000000);
+                return (value + " anos");
+            }
+            return "1 min";
+        }
+
+        // CARD EDIT FUNCTIONS
+        function editProductCard(Time) {
+            // FIND JSON OBJECT CONTAINING MATCHING TIME
+            var purchases = JSON.parse(localStorage.getItem("purchases"));
+            if (purchases) {
+                for (var i in purchases) {
+                    if (purchases[i].date == Time) {
+                        console.log("Edit: " + purchases[i].productName);
+                    }
+                }
+                // SET DATA
+                // RENDER
+            }
+            // DELETE JSON ENTRY
+            // REFRESH VIEW
+            var element = document.getElementById("middleColDiv");
+            element.innerHTML = '';
+            getPurchasesJSONrender();
+        }
+
+        // PRODUCT INSPECTION FUNCTIONS
+        function inspectProductClick(Time) {
+            console.log("Inspect click: " + Time);
+            // FIND JSON OBJECT CONTAINING MATCHING TIME
+            var purchases = JSON.parse(localStorage.getItem("purchases"));
+            if (purchases) {
+                for (var i in purchases) {
+                    if (purchases[i].date == Time) {
+                        // SET DATA
+                        var product = purchases[i].productName;
+                        console.log("Inspect: " + purchases[i].productName);
+                    }
+                }
+                // RENDER
+                renderProductPage(product);
+            }
+        }
+        function renderProductPage(product) {
+            // HIDE MAIN PAGE & SHOW PRODUCT PAGE
+            var element = document.getElementById("mainPage");
+            element.classList.add("w3-hide");
+            var element = document.getElementById("detailsPage");
+            element.classList.remove("w3-hide");
+            // REFRESH VIEW
+            var element = document.getElementById("productPageMiddle");
+            element.innerHTML = '';
+            var element = document.getElementById("productPageTop");
+            element.innerHTML = '';
+            // GET JSON ELEMENTS
+            var purchases = JSON.parse(localStorage.getItem("purchases"));
+            // RENDER TOP
+            renderTitleToProductPage(product);
+            for (var i in purchases) {
+                if (purchases[i].productName == product) {
+                    // RENDER SINGLE
+                    renderProductToProductPage(purchases[i]);
+                    console.log("Render Product: " + purchases[i].productName);
+                    // RESET SCROLL
+                    window.scrollTo(0, 0);
+                    // REGISTER CURRENT PURCHASE
+                    lastValidPurchase = purchases[i];
+                }
+            }
+        }
+        function renderTitleToProductPage(product) {
+            // EXTRACT DATA
+            var purchases = JSON.parse(localStorage.getItem("purchases"));
+            var purchaseCount = 0;
+            var expire = "NaN";
+            var lastValidPurchase;
+            for (var i in purchases) {
+                if (purchases[i].productName == product) {
+                    // RENDER SINGLE
+                    purchaseCount++;
+                    lastValidPurchase = purchases[i];
+                }
+            }
+            var Time = lastValidPurchase.date;
+            // CALCULATE TIME DIFF
+            var now = new Date().getTime();
+            var dif = now - Time;
+            var difStr = msecToInformalTimeAgo(dif);
+            // GET PARENT DIV REFERENCE
+            var parent = document.getElementById("productPageTop");
+            // DECLARE ELEMENT REFERENCERS
+            var div = document.createElement('div');
+            div.classList.add("w3-card-4", "w3-round", "w3-white");
+            div.innerHTML = "<div class=\"w3-container\"><h2 class=\"w3-center\">" + lastValidPurchase.productName + "</h2><hr><div class=\"w3-row\"><div class=\"w3-col s4 w3-center\"><i class=\"fas fa-shopping-cart fa-fw w3-margin-right w3-text-theme\"></i>" + purchaseCount + "</p></div><div class=\"w3-col s4 w3-center\"><i class=\"fas fa-arrow-up fa-fw w3-margin-right w3-opacity\" style=\"color:green\"></i>" + difStr + "</p></div><div class=\"w3-col s4 w3-center\"><i class=\"fas fa-arrow-down fa-fw w3-margin-right w3-opacity\" style=\"color:red\"></i>" + expire + "</p></div></div></div>";
+            // APPEND TO PARENT
+            parent.appendChild(div);
+        }
+        function renderProductToProductPage(purchaseVector) {
+            // EXTRACT DATA
+            var Time = purchaseVector.date;
+            var Measure = purchaseVector.measure;
+            var Value = purchaseVector.value;
+            if (Measure == 'massSelector') var MeasureUnit = ' kg';
+            if (Measure == 'volumeSelector') var MeasureUnit = ' L';
+            if (Measure == 'unitSelector') var MeasureUnit = ' Un.';
+            // CALCULATE TIME DIFF
+            var now = new Date().getTime();
+            var dif = now - Time;
+            var difStr = msecToInformalTimeAgo(dif);
+            // GET PARENT DIV REFERENCE
+            var parent = document.getElementById("productPageMiddle");
+            // DECLARE ELEMENT REFERENCERS
+            var li = document.createElement('li');
+            li.classList.add('w3-padding-16');
+            li.innerHTML = "<span class=\"w3-xlarge\">" + Value + " " + MeasureUnit + "</span><span class=\"w3-large w3-right w3-opacity\" style=\"margin-top: 5px;\">" + difStr + "</span><br>";
+            //APPEND TO PARENT
+            parent.prepend(li);
+        }
+
+        // HOME FUNCTION
+        function home() {
+            // RESET SCROLL
+            window.scrollTo(0, 0);
+            // HIDE ALL OTHER WINDOWS
+            var element = document.getElementById("detailsPage");
+            element.classList.add("w3-hide");
+            // SHOW HOME
+            var element = document.getElementById("mainPage");
+            element.classList.remove("w3-hide");
+        }
+
+        function resetAll() {
+            window.localStorage.setItem("purchases", "");
+            refreshMainView();
+        }
+
+
+    </script>
+
+</body>
+
+</html>
