@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# ProductFlow / Controle de Estoque PhoneGap App
 
 ## Usage
 
