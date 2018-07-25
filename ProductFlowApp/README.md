@@ -2,9 +2,13 @@
 
 ## Usage
 
+
+
 ### PhoneGap CLI
 
-    $ phonegap create my-app --template blank
+    $ phonegap remote run android
+        OR
+    $ cordova build android
 
 ### Desktop
 
@@ -12,3 +16,4 @@ In your browser, open the file:
 
     /www/index.html
 
+*Desktop site was not optimized
